@@ -14,25 +14,35 @@ _競合が発生する理由と解決方法を学びましょう。_
 </header>
 
 <!--
-<<< 著者注: ステップ 1 >>>
-コースのステップを 3～5 個選択してください。
-最初のステップは常に最も難しいので、簡単なものを選んでください。
-詳しい説明については、docs.github.com へのリンクを参照してください。
-ステップごとに新しいタブを開くようにユーザーに促してください。
+<<< 著者注: ステップ 2 >>>
+前のステップを理解した上で、このステップを開始してください。
+用語を定義し、docs.github.com へのリンクを貼ってください。
 -->
 
-## ステップ 1: プルリクエストを作成する
+## ステップ 2: マージコンフリクトの解決
 
-_「マージコンフリクトの管理」へようこそ！:wave:_
+_順調なスタートです！次は、マージコンフリクトについて詳しく見ていきましょう！ :mag:_
 
-**マージコンフリクトとは_？**: **マージコンフリクト** は、2 つの異なるブランチで同じファイルの同じ部分に変更が加えられた場合に発生します。競合は通常、プルリクエストで発見されるので、まずはプルリクエストを作成しましょう。
+少し難しそうに感じるかもしれませんが、ご安心ください。Git はマージに関して賢く機能します！Git に必要なのは、人間が [競合の解決方法](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line) を決定することだけです。場合によっては、マージコンフリクトを解決する最善の方法は、両方のブランチからコンテンツを追加すること、あるいはどちらのブランチにも存在しないコンテンツを追加することです。そのため、Git では人間がコードを確認し、適切な修正を行う必要があります。
 
-### :keyboard: アクティビティ: プルリクエストを作成する
+![Merge conflict](https://github.com/kuboctopus/resolve-merge-conflicts/blob/main/images/merge_conflict.jpg)
+![Resolve merge conflict](https://github.com/kuboctopus/resolve-merge-conflicts/blob/main/images/resolve_merge_conflict.jpg)
 
-1. 新しいブラウザタブを開き、2 番目のタブの手順を実行しながら、このタブの説明を読みます。
-1. リポジトリの `my-resume` ブランチにあるファイルに小さな変更を加えました。
-2. [Create a pull request](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)し、`my-resume` をヘッドブランチ、`main` をベースブランチに設定します。プルリクエストのタイトルと本文には「Resolving merge conflicts」と入力できます。
-3. 約 20 秒待ってから、このページ（手順を実行しているページ）を更新します。[GitHub Actions](https://docs.github.com/ja/actions) が自動的に次のステップに更新されます。
+### :keyboard: アクティビティ: マージコンフリクトの解決
+
+1. 先ほど作成したプルリクエストを開きます。競合は自動的に作成されています。ご安心ください！
+1. ページの下部にある「このブランチには解決すべき競合があります」の下にある「**競合を解決**」ボタンをクリックします。
+1. `<<<<<<< my-resume` で始まり、`>>>>>>> main` で終わるハイライト表示されたセクションを探します。これらのマーカーは、競合しているコンテンツを示すために Git によって追加されます。
+1. `=======` より下と `>>>>>>> main` より上のすべてのコンテンツを削除して、メインブランチに加えられた変更を削除します。
+1. 次に、以下の行を削除してマージコンフリクトマーカーを削除します。
+```
+<<<<<<< my-resume
+=======
+>>>>>>> main
+```
+1. マージコンフリクトマーカーを削除したら、「**解決済みとしてマーク**」をクリックします。
+1. 最後に、「**マージをコミット**」をクリックします。
+1. 約20秒待ってから、このページ（手順を実行しているページ）を更新します。[GitHub Actions](https://docs.github.com/en/actions) が自動的に次のステップに更新されます。
 
 <footer>
 
