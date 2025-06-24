@@ -14,25 +14,29 @@ _競合が発生する理由と解決方法を学びましょう。_
 </header>
 
 <!--
-<<< 著者注: ステップ 4 >>>
-前のステップを確認した上で、このステップを開始してください。
-
-用語を定義し、docs.github.com へのリンクを貼ってください。
+<<< 著者注: 終了 >>>
+学習内容を復習し、フィードバックを求め、次のステップを提示してください。
 -->
 
-## ステップ 4: プルリクエストをマージする
+## 終了
 
-_あと少しです! :heart:_
+_おめでとうございます！このコースを修了しました！_
 
-これでプルリクエストを [マージ](https://docs.github.com/en/get-started/quickstart/github-glossary#merge) できます!
+<img src=https://octodex.github.com/images/benevocats.jpg alt=celebrate width=300 align=right>
 
-### :keyboard: アクティビティ: プルリクエストをマージする
+リポジトリで達成したすべてのタスクを以下にまとめます。
 
-1. まず、プルリクエストに残っている競合を解決します。
-> 不明な点がある場合は、ステップ 1 をもう一度確認してください。
-1. 「**Merge pull request**」をクリックします。
-1. ブランチ `my-resume` を削除します（オプション）。
-1. 約 20 秒待ってから、このページ（手順を実行しているページ）を更新します。 [GitHub Actions](https://docs.github.com/en/actions) は次のステップに自動的に更新されます。
+- マージコンフリクトが発生する理由を学びました。
+- 簡単なマージコンフリクトを解決しました。
+- マージコンフリクトを作成し、解決しました！
+
+### 次のステップ
+
+- GitHub Pages を使って、Markdown 形式のレジュメサイトを作成しましょう！[GitHub Pages](https://github.com/skills/github-pages) コースでその方法を学んでください。
+- このコースについてのご意見を [ディスカッションボード](https://github.com/orgs/skills/discussions/categories/resolve-merge-conflicts) でお聞かせください。
+- [他の GitHub Skills コースを受講する](https://github.com/skills)。
+- [GitHub 入門ドキュメントを読む](https://docs.github.com/en/get-started)。
+- コントリビューションするプロジェクトを見つけるには、[GitHub Explore](https://github.com/explore) をご覧ください。
 
 <footer>
 
