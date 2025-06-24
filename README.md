@@ -14,48 +14,25 @@ _競合が発生する理由と解決方法を学びましょう。_
 </header>
 
 <!--
-<<< 作成者メモ: コース開始 >>>
-開始ボタン、Actions の所要時間に関するメモ、そして受講者にこのコースを受講するべき理由を伝えてください。
+<<< 著者注: ステップ 1 >>>
+コースのステップを 3～5 個選択してください。
+最初のステップは常に最も難しいので、簡単なものを選んでください。
+詳しい説明については、docs.github.com へのリンクを参照してください。
+ステップごとに新しいタブを開くようにユーザーに促してください。
 -->
 
-## ようこそ
+## ステップ 1: プルリクエストを作成する
 
-GitHub 上で 2人が同じファイルに変更を加えたときにマージコンフリクトが発生します。これは、他の人と共同作業しているときによくあることです。相違点の解決には多少の議論が必要になるかもしれませんが、マージコンフリクトを恐れる必要はありません。このコースでは、マージコンフリクトの最適な解決策を見つけるための手順を解説し、チームが開発を継続できるようにします。
+_「マージコンフリクトの管理」へようこそ！:wave:_
 
-- **対象者**: 新規開発者、GitHub 初心者、Git 初心者、学生、マネージャー、チーム。
-- **学習内容**: マージコンフリクトとは何か、マージコンフリクトの解決方法、マージコンフリクトの軽減方法。
-- **構築内容**: このコースでは、短い Markdown レジュメファイルを使用します。
-- **前提条件**: このコースを受講する前に、[GitHub 入門](https://github.com/kuboctopus/introduction-to-github) を受講することをお勧めします。
-- **所要時間**: このコースの所要時間は 30 分未満です。
+**マージコンフリクトとは_？**: **マージコンフリクト** は、2 つの異なるブランチで同じファイルの同じ部分に変更が加えられた場合に発生します。競合は通常、プルリクエストで発見されるので、まずはプルリクエストを作成しましょう。
 
-このコースでは、以下の内容を学習します。
+### :keyboard: アクティビティ: プルリクエストを作成する
 
-1. プルリクエストを作成する
-2. マージコンフリクトを解決する
-3. マージコンフリクトを作成する
-4. プルリクエストをマージする
-
-### このコースの開始方法
-
-<!-- コースを開始するには、JavaScript で次のコマンドを実行します。
-'https://github.com/new?' + new URLSearchParams({
-template_owner: 'kuboctopus',
-template_name: 'resolve-merge-conflicts',
-owner: '@me',
-name: 'skills-resolve-merge-conflicts',
-description: 'My clone repository',
-visibility: 'public',
-}).toString()
--->
-
-[![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=kuboctopus&template_name=resolve-merge-conflicts&owner=%40me&name=skills-resolve-merge-conflicts&description=My+clone+repository&visibility=public)
-
-1. **Start course** を右クリックし、リンクを新しいタブで開きます。
-2. 新しいタブでは、ほとんどのプロンプトが自動的に入力されます。
-- オーナーとして、個人アカウントまたはリポジトリをホストする組織を選択します。
-- プライベートリポジトリは[Actionsの分単位の課金](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions)が発生するため、パブリックリポジトリを作成することをお勧めします。
-- 下にスクロールし、フォームの下部にある**Create repository**ボタンをクリックします。
-3. 新しいリポジトリが作成されたら、約20秒待ってからページを更新します。新しいリポジトリのREADMEに記載されている手順に従ってください。
+1. 新しいブラウザタブを開き、2 番目のタブの手順を実行しながら、このタブの説明を読みます。
+1. リポジトリの `my-resume` ブランチにあるファイルに小さな変更を加えました。
+2. [Create a pull request](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)し、`my-resume` をヘッドブランチ、`main` をベースブランチに設定します。プルリクエストのタイトルと本文には「Resolving merge conflicts」と入力できます。
+3. 約 20 秒待ってから、このページ（手順を実行しているページ）を更新します。[GitHub Actions](https://docs.github.com/ja/actions) が自動的に次のステップに更新されます。
 
 <footer>
 
